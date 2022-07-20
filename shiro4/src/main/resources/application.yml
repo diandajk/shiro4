@@ -1,0 +1,16 @@
+server:
+  port: 8082
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/tb_shiro2?serverTimezone=UTC
+      username: root
+      password: 123456
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+
+mybatis:
+  mapper-locations: classpath:mappers/*Mapper.xml  #配置映射文件
+  type-aliases-package: com.tlkj.shiro4.beans #配置实体类
